@@ -1,0 +1,43 @@
+import React, { useState } from 'react';
+import { Marker, InfoWindow } from '@react-google-maps/api';
+import Orange from '../img/orange.png';
+import Blue from '../img/blue.png';
+import Red from '../img/red.png';
+
+const CustomMarker = ({ item }) => {
+  const [showInfoWindow, setShowInfoWindow] = useState(false);
+
+  const handleMouseOver = () => {
+    setShowInfoWindow(true);
+  };
+
+  const handleMouseOut = () => {
+    setShowInfoWindow(false);
+  };
+
+  const getIconUrl = (remp) => {
+    if (remp > 700) return Blue;
+    if (remp > 300) return Orange;
+    return Red;
+  };
+
+  return (
+    <Marker
+      position={{ lat: item.x, lng: item.y }}
+      icon={{
+        url: getIconUrl(item.remp),
+        scaledSize: new window.google.maps.Size(50, 50),
+      }}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+    >
+      {showInfoWindow && (
+        <InfoWindow position={{ lat: item.x, lng: item.y }} onCloseClick={handleMouseOut}>
+          <div>{item.nom}</div>
+        </InfoWindow>
+      )}
+    </Marker>
+  );
+};
+
+export default CustomMarker;

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
+    </script>
+
+    <style>
+    #map {
+        height: 700px;
+        width: 700px;
+    }
+    </style>
+
+</head>
+<body>
+    <div id="map"></div>
+    
+</body>
+
+<script>
+////////////// 7o9ou9 el nachr w tiba3a
+    console.log(L);
+    const map = L.map('map');
+    map.setView([33.80958, 10.99084],15);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+////////////// custom markers
+    const red =L.icon({
+        iconUrl:"red.png",
+        iconSize:[35,45]
+    })
+    
+    const blue =L.icon({
+        iconUrl:"blue.png",
+        iconSize:[40,45]
+    })
+    const orange =L.icon({
+        iconUrl:"orange.png",
+        iconSize:[40,45]
+    })
+/////////////// t7ot les point manuel
+/*
+    L.marker([33.8128, 10.99060],{
+        title:"mostachfaa",
+        icon: red,
+    })
+    .addTo(map)
+    .bindPopup('<h1>aaaaaaaaaaaa</h1>')
+
+    L.marker([33.8073, 10.991],{
+        title:"midouunnnn",
+        icon:blue
+    })
+    .addTo(map)
+    .bindPopup('<h3>GG</h3>')
+
+    L.marker([33.8107, 10.9905],{
+        title:"rond_point",
+        icon:blue
+    })
+    .addTo(map)
+    .bindPopup('<h1>ccccccccccc</h1>')
+*/
+/////////////// blaayes el corbeille (enregistrement)
+    const data={
+        midoun : {
+            coords : [33.8073, 10.991],
+            title:"houmt souk",
+            remp:80,
+        },
+        mostachfaa : {
+            coords : [33.8128, 10.99060],
+            title:"mostachfaa",
+            remp:50,
+        },
+        rond_point : {
+            coords : [33.8107, 10.9905],
+            title:"rond_point",
+            remp:0,
+        },
+        aa : {
+            coords : [33.8033, 10.9960],
+            title:"aa",
+            remp:50,
+        },
+        bb : {
+            coords : [33.8168, 10.99560],
+            title:"bb",
+            remp:0,
+        },
+        cc : {
+            coords : [33.8147, 10.9805],
+            title:"cc",
+            remp:80,
+        }
+    }
+//////////////// boucle for
+    for(let key in data){
+        const varia = data[key];
+        if(varia.remp == 80 ){
+            color = red;
+            niv="full";
+        }
+        else if(varia.remp == 50 ){
+            color = orange;
+            niv="50%";
+        }
+        else{
+            color = blue;
+            niv="empty";
+        }
+        
+        L.marker(varia.coords,{
+            title:niv,
+            icon: color,
+        })
+    .addTo(map)
+    .bindPopup(varia.title)
+    }
+
+    
+</script>
+</html>

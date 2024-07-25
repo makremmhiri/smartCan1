@@ -1,0 +1,27 @@
+{
+  "data": [
+    {"_id":{"$oid":"664bcb899ace9b2fd8322171"},"nom":"Hôtel Les Palmes D'or","x":33.877189,"y":10.855831,"remp":20},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322172"},"nom":"ma8aza","x": 33.876189,"y": 10.855831,"remp": 60},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322174"},"nom":"mostachfa","x": 33.875489,"y": 10.856831,"remp": 60},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322173"},"nom":"Hôtel La Douce","x":33.873500,"y":10.855000,"remp":90},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322174"},"nom":"Hôtel Djerba Paradise","x":33.873900,"y":10.854000,"remp":90},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322175"},"nom":"Hôtel El Manara","x":33.874300,"y":10.855000,"remp":20},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322176"},"nom":"Hôtel Sidi Mansour","x":33.874100,"y":10.856700,"remp":95},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322177"},"nom":"Hôtel Dar Dhiafa","x":33.875100,"y":10.857000,"remp":90},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322178"},"nom":"Hôtel Hasdrubal Thalassa","x":33.875500,"y":10.858000,"remp":25},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322179"},"nom":"Hôtel Iberostar Mehari","x":33.875800,"y":10.853500,"remp":70},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322180"},"nom":"Hôtel Le Petit Palais","x":33.876300,"y":10.852900,"remp":25},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322181"},"nom":"Hôtel Seabel Rym Beach","x":33.877200,"y":10.853900,"remp":20},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322182"},"nom":"Hôtel Green Palm","x":33.877100,"y":10.854900,"remp":85},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322183"},"nom":"Hôtel Vincci Helios Beach","x":33.878000,"y":10.855400,"remp":25},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322184"},"nom":"Hôtel Djerba Plaza","x":33.877900,"y":10.856900,"remp":60},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322185"},"nom":"Hôtel Royal Garden","x":33.878300,"y":10.857900,"remp":28},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322186"},"nom":"Hôtel Les Sirenes","x":33.877000,"y":10.858000,"remp":20},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322187"},"nom":"Hôtel Radisson Blu Palace","x":33.878100,"y":10.853850,"remp":20},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322188"},"nom":"Hôtel Yadis Djerba","x":33.874800,"y":10.852900,"remp":95},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322189"},"nom":"Hôtel Calypso","x":33.873900,"y":10.853000,"remp":75},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322190"},"nom":"Hôtel Riad Meninx","x":33.874700,"y":10.854000,"remp":88},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322191"},"nom":"Hôtel L'Île de Djerba","x":33.874900,"y":10.855000,"remp":70},
+    {"_id":{"$oid":"664bcb899ace9b2fd8322192"},"nom":"Hôtel Laico Djerba","x":33.875100,"y":10.856000,"remp":95}
+  ]
+}
